@@ -5,8 +5,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel=stylesheet href={{asset('css/jquery-ui.css')}} type=text/css media=all />
-        <link rel=stylesheet href={{asset('css/home.css')}} type=text/css media=all />
+        <link rel=stylesheet href={{secure_asset('css/jquery-ui.css')}} type=text/css media=all />
+        <link rel=stylesheet href={{secure_asset('css/home.css')}} type=text/css media=all />
 
         <title>Renty - Car Rental</title>
 
@@ -73,11 +73,11 @@
     <div id=container>
         <div id=branding>
             <div id=branding-content>
-                <div class=title-content> <a href="" title> <img class=site-logo src={{asset('images/thumb.png')}}
+                <div class=title-content> <a href="" title> <img class=site-logo src={{secure_asset('images/thumb.png')}}
                             alt />
                         <h1 class=site-title>Kencars </h1>
                     </a> </div>
-                <div class=access-content> <label for=menu-icon class=menu-icon><img src={{asset('images/menu.png')}}
+                <div class=access-content> <label for=menu-icon class=menu-icon><img src={{secure_asset('images/menu.png')}}
                             alt=menu /></label> <input type=checkbox id=menu-icon value=1 />
                     <ul>
                         <li class=menu-close> <span>&#10006;</span> </li>
@@ -106,9 +106,9 @@
         <div id=slider>
             <div id=slider-img>
                 <ul class=slides>
-                    <li><img src={{asset('images/slider1.jpg')}} alt /></li>
-                    <li><img src={{asset('images/slider3.jpg')}} alt /></li>
-                    <li><img src={{asset('images/slider2.jpg')}} alt /></li>
+                    <li><img src={{secure_asset('images/slider1.jpg')}} alt /></li>
+                    <li><img src={{secure_asset('images/slider3.jpg')}} alt /></li>
+                    <li><img src={{secure_asset('images/slider2.jpg')}} alt /></li>
                     <div id=slider-pattern></div>
                 </ul>
             </div>
@@ -121,7 +121,7 @@
                         <div class=entry-content>Phasellus eget ultricies libero. Sed dolor turpis, malesuada vitae
                             cursus a, auctor semper neque.</div>
                     </div>
-                    <div id=slider-front-img> <img src={{ asset('images/slider_front_img.png') }} alt /> </div>
+                    <div id=slider-front-img> <img src={{ secure_asset('images/slider_front_img.png') }} alt /> </div>
                 </div>
             <form id=slider-form class=main-form method="post" action="{{route('home')}}" >
                 @csrf
@@ -178,24 +178,24 @@
                 </div>
                 <aside id=secondary>
                     <div class=first-column>
-                        <div class=feature-single> <img class=feature-title-img src={{asset('images/1-icon.png')}} alt />
+                        <div class=feature-single> <img class=feature-title-img src={{secure_asset('images/1-icon.png')}} alt />
                             <div class=feature-title>Special low rates on car booking</div>
                             <div>Nunc ut nibh enim, id dapibus quam. Mauris id est at diam rutrum ultricies. Vivamus et
                                 dolor velit. Nam congue blandit nulla sed tincidunt.</div>
                         </div>
-                        <div class=feature-single> <img class=feature-title-img src={{asset('images/2-icon.png')}} alt />
+                        <div class=feature-single> <img class=feature-title-img src={{secure_asset('images/2-icon.png')}} alt />
                             <div class=feature-title>Dedicated customer support</div>
                             <div>Praesent tempus egestas blandit. Nunc euismod volutpat ultrices. Nam fermentum nibh
                                 eget mi vehicula dictum.</div>
                         </div>
                     </div>
                     <div class=second-column>
-                        <div class=feature-single> <img class=feature-title-img src={{asset('images/3-icon.png')}} alt />
+                        <div class=feature-single> <img class=feature-title-img src={{secure_asset('images/3-icon.png')}} alt />
                             <div class=feature-title>Manage your booking online</div>
                             <div>Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et
                                 malesuada fames ac turpis egestas.</div>
                         </div>
-                        <div class=feature-single> <img class=feature-title-img src={{asset('images/4-icon.png')}} alt />
+                        <div class=feature-single> <img class=feature-title-img src={{secure_asset('images/4-icon.png')}} alt />
                             <div class=feature-title>You are guaranteed a car and driver</div>
                             <div>Donec vitae orci metus, et viverra ipsum. Curabitur tristique tristique lacinia. Sed
                                 sagittis placerat vestibulum.</div>
@@ -232,7 +232,7 @@
                         </div>
                     </div>
                     <div class="custom-info footer-widget-single">
-                        <div class=support> <img src={{asset('images/support-icon.png')}} alt />
+                        <div class=support> <img src={{secure_asset('images/support-icon.png')}} alt />
                             <div>
                                 <div class=title>Online support</div>
                                 <div class=phone>800 KOHIMA</div>
@@ -265,7 +265,7 @@
                     <div class=clear></div>
                 </div>
             </div>
-            <div id=footer-content> <img class=site-logo src={{asset('images/thumb.png')}} alt />
+            <div id=footer-content> <img class=site-logo src={{secure_asset('images/thumb.png')}} alt />
                 <h1 class=site-title>Kencars</h1>
                 <div class=company-name>Kencars Rental company &copy 2020</div>
             </div>
@@ -324,15 +324,15 @@
         </div>
     </div>
 
-    <script type=text/javascript src={{asset('js/jquery-1.11.3.min.js')}}></script>
-    <script type=text/javascript src={{asset('js/jquery-migrate-1.2.1.min.js')}}></script>
-    <script type=text/javascript src={{asset('js/jquery-ui.js')}}></script>
+    <script type=text/javascript src={{secure_asset('js/jquery-1.11.3.min.js')}}></script>
+    <script type=text/javascript src={{secure_asset('js/jquery-migrate-1.2.1.min.js')}}></script>
+    <script type=text/javascript src={{secure_asset('js/jquery-ui.js')}}></script>
     <!--[if IE]> <script type=text/javascript src=js/placeholder_ie.js></script> <![endif]-->
-    <script type=text/javascript src={{asset('js/custom-form-elements.js')}}></script>
-    <script type=text/javascript src={{asset('js/jquery.meio.mask.js')}}></script>
-    <script type=text/javascript src={{asset('js/jquery.selectbox-0.2.min.js')}}></script>
-    <script type=text/javascript src={{asset('js/jquery.blueberry.js')}}></script>
-    <script type=text/javascript src={{asset('js/script.js')}}></script>
+    <script type=text/javascript src={{secure_asset('js/custom-form-elements.js')}}></script>
+    <script type=text/javascript src={{secure_asset('js/jquery.meio.mask.js')}}></script>
+    <script type=text/javascript src={{secure_asset('js/jquery.selectbox-0.2.min.js')}}></script>
+    <script type=text/javascript src={{secure_asset('js/jquery.blueberry.js')}}></script>
+    <script type=text/javascript src={{secure_asset('js/script.js')}}></script>
 </body>
 
 </html>

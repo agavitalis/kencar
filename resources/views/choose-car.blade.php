@@ -7,7 +7,7 @@
     <meta http-equiv=content-type content="text/html; charset=UTF-8" />
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel=stylesheet href=css/jquery-ui.css type=text/css media=all />
-    <link rel=stylesheet href={{ asset('css/home.css')}} type=text/css media=all />
+    <link rel=stylesheet href={{ secure_asset('css/home.css')}} type=text/css media=all />
     <link rel=stylesheet href=css/jquery.slider.min.css />
     <!--[if IE]> <script type=text/javascript src=js/html5.js></script> <link rel=stylesheet id=stylesheet-ie href=css/css_ie.css type=text/css media=all /> <![endif]-->
 </head>
@@ -16,11 +16,11 @@
     <div id=container>
         <div id=branding>
             <div id=branding-content>
-                <div class=title-content> <a href="" title> <img class=site-logo src={{asset('images/thumb.png')}}
+                <div class=title-content> <a href="" title> <img class=site-logo src={{secure_asset('images/thumb.png')}}
                             alt />
                         <h1 class=site-title>Kencars </h1>
                     </a> </div>
-                <div class=access-content> <label for=menu-icon class=menu-icon><img src={{asset('images/menu.png')}}
+                <div class=access-content> <label for=menu-icon class=menu-icon><img src={{secure_asset('images/menu.png')}}
                             alt=menu /></label> <input type=checkbox id=menu-icon value=1 />
                     <ul>
                         <li class=menu-close> <span>&#10006;</span> </li>
